@@ -1,11 +1,11 @@
 # Exercise-for-java
 
->java环境配置与初步使用
+>java环境配置与初步使用  
 
 1.下载jdk
-http://www.oracle.com/technetwork/java/javase/overview/index.html
-\n
-2.系统环境配置
+http://www.oracle.com/technetwork/java/javase/overview/index.html  
+
+2.系统环境配置  
  1)新建系统变量
  变量名：JAVA_HOME
  值：安装的jdk的路径 eg:C:\Program Files\Java\jdk-10.0.2
