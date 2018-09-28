@@ -1,1 +1,9 @@
+The output for ListDemo:
+equals: true
+cnt(unpack): 15
+list(before): 15
+tmp(before): 15
+tmp(after): 12
+lsit(after): 15
 
+结果：Integer integer =list.get(0); 此处为值的复制
