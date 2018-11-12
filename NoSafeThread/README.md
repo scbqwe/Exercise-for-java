@@ -19,7 +19,7 @@
         }  
     }  
 查看了下ArraryList和Itr的源码实现
-'''
+''' java
 	 public E next() {
             checkForComodification();
             int i = cursor;
