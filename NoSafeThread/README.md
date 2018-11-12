@@ -18,8 +18,10 @@
                ......  
         }  
     }  
+	
+	
 查看了下ArraryList和Itr的源码实现  
-
+变量介绍：（1）cursor:指向下一个元素的索引 （2）lastRet:上一个访问的元素的索引 （3）expectedModCount：Itr类的期望修改计数变量   （4）modCount：ArrayLisT继承自AbstractList的成员变量，用来记录ArrayList被修改的次数
 Itr.next()实现：
 ```  
 	 public E next() {
@@ -33,4 +35,10 @@ Itr.next()实现：
             cursor = i + 1;
             return (E) elementData[lastRet = i];
         }
+	
+	final void checkForComodification() {
+            if (modCount != expectedModCount)
+                throw new ConcurrentModificationException();
+        }
 ```
+
