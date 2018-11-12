@@ -19,7 +19,7 @@
         }  
     }  
 查看了下ArraryList和Itr的源码实现
-(''')
+'''
 	 public E next() {
             checkForComodification();
             int i = cursor;
@@ -31,4 +31,4 @@
             cursor = i + 1;
             return (E) elementData[lastRet = i];
         }
-(''')
+'''
