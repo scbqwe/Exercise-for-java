@@ -7,4 +7,14 @@
 	at scb.test.ThreadSafeDemo1.run(ThreadSafeDemo1.java:28)  
 	at java.lang.Thread.run(Unknown Source)  
 
-查看了下
+>synchronized(this){
+            Iterator<String> iterator = list.iterator();
+            int cnt = 0;
+            while(iterator.hasNext()){
+                iterator.next();
+                iterator.remove();
+                cnt++;
+               ......
+        }
+    }
+查看了下ArraryList和Itr的源码实现
