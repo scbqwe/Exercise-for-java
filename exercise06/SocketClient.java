@@ -59,7 +59,7 @@ public class SocketClient {
 				if(context.size()>0) {
 					boolean flag;
 					try {
-						flag = client.sendFileToServer(context,path.substring(path.lastIndexOf("\\"), path.length()));
+						flag = client.sendFileToServer(context,path.substring(path.lastIndexOf("\\")+1, path.length()));
 						if(flag) {
 							System.out.println("文件传送成功！");
 						}else {
